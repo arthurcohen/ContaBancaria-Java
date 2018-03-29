@@ -1,3 +1,7 @@
+/** Represents an vehicle
+    * @author Arthur Cohen
+    * @author www.forcohen.com
+*/
 public class Main{
     public static void main(String[] args) {
         Banco banco = new Banco();
