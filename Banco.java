@@ -16,6 +16,20 @@ public class Banco{
         return this.contas.get(index);
     }
 
+    public boolean CalcularNovoSaldo(int index, int taxaRendimento){
+        try{
+            ContaPoupanca conta = (ContaPoupanca)this.contas.get(index);
+            conta.CalcularNovoSaldo(taxaRendimento);
+            return true;
+        }catch(Exception e){
+            return false;
+        }
+    }
+
+    public boolean sacar(int index, double valor){
+        return this.contas.get(index).sacar(valor);
+    }
+
     public void removerConta(int index){
         this.contas.remove(index);
     }
