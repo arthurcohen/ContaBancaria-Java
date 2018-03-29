@@ -1,7 +1,7 @@
 public class ContaBancaria{
-    private String cliente;
-    private int numConta;
-    private double saldo;
+    protected String cliente;
+    protected int numConta;
+    protected double saldo;
 
     public ContaBancaria(String cliente, int numConta, double saldo){
         this.cliente = cliente;
@@ -10,7 +10,7 @@ public class ContaBancaria{
     }
 
     public boolean sacar(double valor){
-        if (valor > saldo) return false;
+        if (valor > saldo || valor <= 0) return false;
         saldo -= valor;
         return true;
     }
@@ -22,6 +22,6 @@ public class ContaBancaria{
     }
 
     public String toString(){
-        return String.format("Cliente %s\n%d - %d", this.cliente, this.numConta, this.saldo);
+        return String.format("Cliente %s\n%d - R$ %d", this.cliente, this.numConta, this.saldo);
     }
 }
