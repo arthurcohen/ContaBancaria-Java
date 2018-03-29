@@ -22,6 +22,6 @@ public class ContaBancaria{
     }
 
     public String toString(){
-        return String.format("Cliente %s\n%d - R$ %d", this.cliente, this.numConta, this.saldo);
+        return String.format("Cliente %s\n%d - R$ %f", this.cliente, this.numConta, this.saldo);
     }
 }

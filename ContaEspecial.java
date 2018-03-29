@@ -15,6 +15,6 @@ public class ContaEspecial extends ContaBancaria{
     }
 
     public String toString(){
-        return String.format("Cliente %s\n%d - R$ %d (limite da conta R$ %d)", super.cliente, this.numConta, this.saldo, this.limite);
+        return String.format("Cliente %s\n%d - R$ %f (limite da conta R$ %f)", super.cliente, this.numConta, this.saldo, this.limite);
     }
 }

@@ -11,6 +11,6 @@ public class ContaPoupanca extends ContaBancaria{
     }
 
     public String toString(){
-        return String.format("Cliente %s\n%d - R$ %d (dia de rendimento %d)", super.cliente, this.numConta, this.saldo, this.diaDeRendimento);
+        return String.format("Cliente %s\n%d - R$ %f (dia de rendimento %d)", super.cliente, this.numConta, this.saldo, this.diaDeRendimento);
     }
 }
