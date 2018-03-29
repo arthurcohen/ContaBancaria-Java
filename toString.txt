@@ -1,0 +1,9 @@
+Vimos em aulas passadas que classes podem ser herdadas por outras. Vimos também todos
+os objetos em java herdam métodos de uma superclasse universal chamada Object. Dos métodos
+dessa classe, um dos mais interessantes é o toString. Procure este método na API do Java e
+responda em um .TXT qual seu tipo de retorno e se ele possui algum parâmetro.
+
+
+toString()
+
+o m�todo toString() pertence originalmente a classe Object, contida no pacote lang do java. Esse m�todo � respons�vel por transformar a composi��o abstrata do objeto que a usa em uma representa��o textual em formato de String. Normalmente, para classes definidas pelo usu�rio, esse m�todo � sobrescrito para que o resultado seja de mais f�cil compreens�o do desenvolvedor. Por padr�o, a classe Object o imprementa com o seguinte padr�o: nome da classe + @ + hash to objeto. 
